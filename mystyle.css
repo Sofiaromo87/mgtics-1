@@ -135,12 +135,14 @@ header{
         display: none;
     }
 }
+/*projects*/
 /* Estilo para la sección de Projects */
 #projects {
-    padding: 50px 0;
+    padding: 40px 20px;
     background-color: #f9f9f9;
     color: #292929;
     text-align: center;
+
 }
 
 /* Título de la sección "Projects" */
@@ -149,6 +151,7 @@ header{
     font-size: 32px;
     margin-bottom: 30px;
     font-weight: 700;
+    
 }
 
 /* Contenedor que organiza las tablas */
@@ -172,9 +175,10 @@ table {
 
 /* Estilo de las celdas */
 th, td {
-    padding: 12px 15px;
+    padding: 10px 20px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border:none; 
+    border-bottom: 2px solid #ddd;
     font-size: 1rem;
 }
 
@@ -182,13 +186,14 @@ th, td {
 th {
     background-color: #af4ca0;
     color: white;
-    font-weight: bold;
+    font-style: italic;
 }
 
-/* Fila alterna con fondo gris claro */
+/* Fila alterna*/
 tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-    color: #000;
+    background-color: #efade1;
+    color: #fcf7f7;
+
 }
 
 /* Efecto hover para filas */
@@ -218,6 +223,7 @@ a:hover {
     height: 50px;
     object-fit: cover;
     border-radius: 8px;
+    
 }
 
 /* Estilo pantallas pequeñas */
