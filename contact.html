@@ -25,27 +25,57 @@
       </header>
       <main class="container">
     <h2> Contact</h2>
-    <div class="mb-3">
-        <label> Nombre </label>
-        <input class="form-control" type="text">
+    <form id="form">
+      <div class="mb-3">
+          <label> Nombre </label>
+          <input class="form-control" type="text" id="txtName">
+      </div>
+      <div class="mb-3">
+          <label> Edad </label>
+          <input class="form-control" type="number" id="txtAge">
+      </div>
+      <div class="mb-3">
+          <label> Materia 1 </label>
+          <input class="form-control" type="number" id="txtGrade1">
+      </div>
+      <div class="mb-3">
+          <label> Materia 2 </label>
+          <input class="form-control" type="number" id="txtGrade2">
+      </div>
+      <div class="mb-3">
+          <button type="submit" class="btn btn-primary" onclick="register()"> Registrar</button>
+      </div>
+  </form>
+
+    <div class="card mt-5">
+      <div class="card-header bg-primary text-white text-sombra d-flex align-items-center">
+        <strong>Listado de Estudiantes</strong>
+        <button class="btn btn-danger ms-auto" onclick="clearStorage()">Borrar todo</button>
     </div>
-    <div class="mb-3">
-        <label> Edad </label>
-        <input class="form-control" type="number">
-    </div>
-    <div class="mb-3">
-        <label> Materia 1 </label>
-        <input class="form-control" type="number">
-    </div>
-    <div class="mb-3">
-        <label> Materia 2 </label>
-        <input class="form-control" type="number">
-    </div>
-    <div class="mb-3">
-        <button clas="btn btn-primary"> Registrar</button>
+      <div class="card-body">
+        <div id="list">
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Edad</th>
+                <th scope="col" class="text-center">Materia 1</th>
+                <th scope="col" class="text-center">Materia 2</th>
+                <th scope="col" class="text-center">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Filas dinámicas -->
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 </main>
 
-<script src="./scripts/script1.js"></script>
+<script src="scripts/register.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
+
